@@ -1,4 +1,21 @@
 Rails.application.routes.draw do
+  # Routes for the Store resource:
+  # CREATE
+  get "/stores/new", :controller => "stores", :action => "new"
+  post "/create_store", :controller => "stores", :action => "create"
+
+  # READ
+  get "/stores", :controller => "stores", :action => "index"
+  get "/stores/:id", :controller => "stores", :action => "show"
+
+  # UPDATE
+  get "/stores/:id/edit", :controller => "stores", :action => "edit"
+  post "/update_store/:id", :controller => "stores", :action => "update"
+
+  # DELETE
+  get "/delete_store/:id", :controller => "stores", :action => "destroy"
+  #------------------------------
+
   devise_for :merchants
   # Routes for the Merchant resource:
   # READ
