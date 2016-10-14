@@ -1,0 +1,1 @@
+{"name":"Username bug","repository":"https://github.com/initialversion/username-bug-1476464303","env":{"CLOUDINARY_CLOUD_NAME":{"required":true},"CLOUDINARY_API_KEY":{"required":true},"CLOUDINARY_API_SECRET":{"required":true}}}
