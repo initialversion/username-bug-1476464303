@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => "stores#index"
   # Routes for the Store resource:
   # CREATE
   get "/stores/new", :controller => "stores", :action => "new"
