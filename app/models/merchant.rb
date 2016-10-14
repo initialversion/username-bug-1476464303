@@ -1,6 +1,9 @@
 class Merchant < ApplicationRecord
   # Direct associations
 
+  has_many   :stores,
+             :dependent => :destroy
+
   # Indirect associations
 
   # Validations
