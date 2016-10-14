@@ -33,7 +33,7 @@
           Merchant
         </label>
 
-        <input type="text" id="merchant_id" name="merchant_id" placeholder="Merchant" class="form-control" value="<%= @store.merchant_id %>">
+        <%= select_tag(:merchant_id, options_from_collection_for_select(Merchant.all, :id, :created_at, @store.merchant_id), :class => "form-control") %>
       </div>
 
       <button class="btn btn-success">
