@@ -1,0 +1,28 @@
+<div class="page-header">
+  <h3>Merchant #<%= @merchant.id %></h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <dt>Email</dt>
+      <dd><%= @merchant.email %></dd>
+
+      <dt>Password</dt>
+      <dd><%= @merchant.password %></dd>
+
+    </dl>
+
+    <div class="btn-group btn-group-justified">
+      <a href="/merchants" class="btn btn-primary">
+        Back
+      </a>
+      <a href="/merchants/<%= @merchant.id %>/edit" class="btn btn-warning">
+        Edit
+      </a>
+      <a href="/delete_merchant/<%= @merchant.id %>" class="btn btn-danger" rel="nofollow">
+        Delete
+      </a>
+    </div>
+  </div>
+</div>
